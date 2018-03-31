@@ -2,9 +2,22 @@
 
 /*視窗底色設定*/
 body{
+	/*
 	background-color: #fbf9cc;
+	background-image: url(img/bg-stripe01.png);
+	background-repeat: repeat-x;
+	*/
+	background: #fbf9cc url(img/bg-stripe01.png) repeat-x;
 }
 
+/*內容整體外框設定*/
+#wrap{
+	width: 798px;
+	margin: 40px auto;
+	padding: 40px 80px;
+	border: #f6bb9e 1px solid;
+	background-color: #ffffff;
+}
 /*連結顏色設定*/
 a{
 	color: #df4839;
@@ -35,6 +48,7 @@ h2{
 
 /*內容標題設定*/
 dt{
+	float: left;
 	font-weight: bold;
 }
 
@@ -46,9 +60,26 @@ dt{
 	text-align: center;
 }
 
+/*照片及特徵區塊設定*/
+.ph{
+	float: left;
+	margin-right: 30px;
+}
+
+.data{
+	float: left;
+	width: 388px;
+	background-color: #ffffff;
+}
+
 /*「更多介紹」連結設定*/
 .more{
 	text-align: right;
+	padding-right: 20px;
+	background-image: url(img/icon-arw01.png);
+	background-repeat: no-repeat;
+	background-position: right center; 
+	clear: left;
 }
 
 /*花色、性別（共通資料）*/
@@ -64,4 +95,12 @@ dt{
 
 .female{
 	color: #df972f;
+}
+/*區塊邊框設定*/
+.frame{
+	margin: 20px 0;
+	padding: 35px 30px 30px 30px;
+	background-image: url(img/bg-stripe02.png);
+	background-repeat: repeat-x;
+	background-color: #fbf9cc;
 }
