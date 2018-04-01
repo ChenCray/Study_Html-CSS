@@ -96,6 +96,7 @@ dt{
 .female{
 	color: #df972f;
 }
+
 /*區塊邊框設定*/
 .frame{
 	margin: 20px 0;
@@ -103,4 +104,89 @@ dt{
 	background-image: url(img/bg-stripe02.png);
 	background-repeat: repeat-x;
 	background-color: #fbf9cc;
+}
+
+/*表格設定*/
+table.entryForm{
+	width: 100%;
+	border: #f6bb9e 2px solid;
+	border-collapse: collapse;
+}
+
+.entryForm th, .entryForm td{
+	padding: 5px 10px;
+	border: #f6bb9e 1px solid;
+}
+
+.entryForm th{
+	width: 10em;
+	background-color: #ffeeee;
+	text-align: left;
+	vertical-align: top;
+}
+
+/*輸入表單設定*/
+.entryForm textarea{
+	width: 600px;
+	height: 100px;
+	padding: 5px;
+	border: #cccccc 1px solid;
+}
+
+.entryForm input[type="text"], .entryForm input[type="email"]{
+	width: 400px;
+	padding: 5px;
+	border: #cccccc 1px solid;
+}
+
+.entryForm input:focus, .entryForm textarea:focus{
+	background-color: #ffffee;
+}
+
+label,
+input[type="radio"],
+input[type="checkbox"],
+input[type="reset"],
+input[type="submit"]{
+	cursor: pointer;
+}
+
+/*按鈕設定*/
+.btns{
+	margin: 30px;
+	text-align: center;
+}
+
+/*
+.btns input{
+	width: 100px;
+}
+*/
+
+/*按鈕基本樣式*/
+.btn{
+	width: 100px;
+	margin: 0 10px;
+	padding: 10px;
+	font-size: 16px;
+	border: none;
+}
+
+/*滑鼠移到按鈕時*/
+.btn:hover{
+	opacity: 0.7
+}
+
+/*按下按鈕的瞬間*/
+.btn:active{
+	color: #ffffff;
+}
+
+/*依按鈕功能區分顏色*/
+.btn-clear{
+	background-color: #cccccc;
+}
+
+.btn-send{
+	background-color: #f6bb9e;
 }
