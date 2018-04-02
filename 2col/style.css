@@ -1,0 +1,34 @@
+@charset "UTF-8";
+/* CSS Document */
+
+*{
+		margin:0;
+		padding:0;
+}
+
+#wrap{
+	width: 800px;
+	margin: 30px auto;
+	background-color: #cccccc;
+}
+
+#header{
+	background-color: #ffff00;
+}
+
+#main{
+	width: 500px;
+	background-color: #00ff00;
+	float: right;
+}
+
+#side{
+	width: 280px;
+	background-color: #00ffff;
+	float: left;
+}
+
+#footer{
+	background-color: #ff00ff;
+	clear: both;
+}
