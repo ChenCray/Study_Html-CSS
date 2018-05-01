@@ -1,81 +1,143 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
-	<meta http-equiv="Content-Type" content="test/html; charset=utf-8">
-	<title>我家的貓咪</title>
-	<meta name="keywords" content="貓咪,喵咪,喵星人,貓咪介紹">
-	<meta name="description" content="介紹我家的偶像貓咪們！還有大量可愛的貓照片。">
-	<link rel="stylesheet" type="text/css" href="style.css" media="all">
-	<style>
-	</style>
+<meta charset="utf-8">
+<title>範例：CSS3選擇器</title>
+<link href="css/base.css" rel="stylesheet" media="all">
+<link href="css/style.css" rel="stylesheet" media="all">
+<!--[if lt IE 9]>
+<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+<![endif]-->
 </head>
 <body>
-	<div id="wrap">
-	<h1><span>★</span>我家的貓咪<span>★</span></h1>
-<p id="lead">來介紹一下我家的偶像貓咪們！</p>
-<ul>
-<li><a href="#cats">我家貓咪的介紹</a></li>
-<li><a href="#profile">飼主介紹</a></li>
-<li><a href="#entry">貓咪照片大募集</a></li>
+<h1>CSS3 Selector</h1>
+
+<section  class="category attr">
+<h2>Attribute Selector【屬性選擇器】</h2>
+
+<section>
+<h3>選擇class屬性<em>「以xx開頭」</em>的元素</h3>
+<ul class="sample">
+<li class="STARTxx">class="STARTxx"</li>
+<li class="xxSTART">class="xxSTART"</li>
+<li class="xxSTARTxx">class="xxSTARTxx"</li>
 </ul>
-
-<section id="cats">
-<h2>我家貓咪的介紹</h2>
-<section id="subaru" class="frame">
-<h3>●小昂<span class="cat-type male">（白底棕灰虎斑・公）</span></h3>
-<p>大眼大耳的超級帥哥，叫聲也相當可愛。可能因為童年時期是在套房渡過，對其它貓咪沒什麼興趣，個性相當自我。<br>
-最喜歡在瓦楞紙箱的邊角或柱子磨爪子。</p>
-
-<img src="img/subaru.jpg" width="320" height="100" alt="小昂" class="ph">
-<dl class="data">
-<dt>特徵：</dt><dd>大眼大耳與彎曲的尾巴。</dd>
-<dt>個性：</dt><dd>自我。</dd>
-</dl>
-<p class="more"><a href="cats/subaru.html">更多介紹→</a></p>
 </section>
-<section id="gureko" class="frame">
-<h3>●暮子<span class="cat-type female">（灰貓・母）</span></h3>
-<p>剛出生時，有類似美國短毛貓那樣的花紋，沒想到長大後變成單純只是隻灰貓。可能有混到一點長毛種，毛非常膨鬆，因此被我家人戲稱是「灰毛球」。
-從她偏沙啞的聲音和成熟的臉孔，很難想像她其實是隻撒嬌鬼。就算是初次見面的人，也會過去蹭來蹭去，因此很受客人的好評。</p>
 
-<img src="img/gureko.jpg" width="320" height="100" alt="暮子" class="ph">
-<dl class="data">
-<dt>特徵：</dt><dd>沙啞嗓音。呼嚕呼嚕磨蹭蹭攻擊。</dd>
-<dt>個性：</dt><dd>愛撒嬌。奸詐。</dd>
-</dl>
-<p class="more"><a href="cats/gureko.html">更多介紹→</a></p>
+<section>
+<h3>選擇class屬性<em>「以xx結尾」</em>的元素</h3>
+<ul class="sample">
+<li class="ENDxx">class="ENDxx"</li>
+<li class="xxEND">class="xxEND"</li>
+<li class="xxENDxx">class="xxENDxx"</li>
+</ul>
 </section>
-<section id="nezuko" class="frame">
-<h3>●鼠子<span class="cat-type female">（白底橘虎斑・母）</span></h3>
-<p>和暮子一起來到我家的白底橘虎斑女孩。性格與暮子不同，是典型的貓性格。若說她是傲嬌，不如說她是高傲更貼切（淚）。在與暮子的勢力爭戰中敗北，被從家裡趕出去，現在是半流浪狀態。
-原本外型算是純日本貓風的美人，但在流浪時被烏鴉攻擊，因而失去一隻眼睛。孤高的貓咪。</p>
 
-<img src="img/nezuko.jpg" width="320" height="100" alt="鼠子" class="ph">
-<dl class="data">
-<dt>特徴：</dt><dd>獨眼、小臉。</dd>
-<dt>個性：</dt><dd>高傲，在人類面前就是個女王。</dd>
-</dl>
-<p class="more"><a href="cats/nezuko.html">更多介紹→</a></p>
+<section>
+<h3>選擇class屬性<em>「包含xx」</em>的元素</h3>
+<ul class="sample">
+<li class="CNTxx">class="CNTxx"</li>
+<li class="xxCNT">class="xxCNT"</li>
+<li class="xxCNTxx">class="xxCNTxx"</li>
+</ul>
+</section>
+
+<section>
+<h3 class="practice">依連結類型顯示對應圖示</h3>
+<ul class="sample">
+<li><a href="index.html">一般連結</a></li>
+<li><a href="http://www.google.com/">外部網站連結</a></li>
+<li><a href="img/file01.pdf">開啟PDF檔的連結</a></li>
+</ul>
 </section>
 </section>
 
-<section id="profile">
-<h2>飼主介紹</h2>
-<dl>
-<dt>暱稱：</dt><dd>roka404</dd>
-<dt>職業：</dt><dd>Web相關工作的SOHO族</dd>
-<dt>mail ：</dt><dd>info@hogehoge.com</dd>
-<dt>Web ：</dt><dd><a href="http://www.hogehoge.com/" target="_blank">http://www.hogehoge.com/</a></dd>
-</dl>
+<section class="category pseudo">
+<h2>Pseudo Class Selector【虛擬類別】</h2>
+
+<section>
+<h3>包含所有子元素的<em>「～child」</em>型虛擬類別</h3>
+<ul class="sample child">
+<li>child1 (first)</li>
+<li>child2</li>
+<li>child3</li>
+<li>child4</li>
+<li>child5</li>
+<li>child6</li>
+<li>child7 (last)</li>
+</ul>
 </section>
 
-<section id="entry">
-<h2>貓咪照片大募集</h2>
-<p>相簿功能企劃中。請大家介紹您最寶貝的貓大人♪
-<strong>若能收集到10隻貓咪，就開設介紹網頁！</strong></p>
-<p><a href="entry.html">報名請由此→</a></p>
-</section>
-<p><small>Copyright &copy; UCHI NO NYAN'S All Rights Reserved.</small></p>
+<section>
+<h3>只包含相同元素的<em>「～of-type」</em>型虛擬類別</h3>
+<div class="sample ofType">
+<h4>heading1 (h4)</h4>
+<p>paragraph1</p>
+<h4>heading2 (h4)</h4>
+<p>paragraph2</p>
+<h5>heading3 (h5)</h5>
+<p>paragraph3</p>
 </div>
+</section>
+
+<section>
+<h3 class="practice no1">雙色條紋表格</h3>
+<table class="stripe">
+<tr><td>White</td><td>White</td></tr>
+<tr><td>Gray</td><td>Gray</td></tr>
+<tr><td>White</td><td>White</td></tr>
+<tr><td>Gray</td><td>Gray</td></tr>
+</table>
+<h3 class="practice no2">最後一列以紅字顯示</h3>
+<dl class="lastRed">
+<dt>Item1</dt>
+<dd>XXXXXXXXXX</dd>
+<dt>Item2</dt>
+<dd>XXXXXXXXXX</dd>
+<dt>Item3</dt>
+<dd>XXXXXXXXXX</dd>
+</dl>
+</section>
+</section>
+
+<section  class="category other">
+<h2>Other Pseudo Class Selector【其它虛擬類別】</h2>
+
+<section>
+<h3>選擇最後一列以外的部份</h3>
+<ul class="sample nots">
+<li>list1</li>
+<li>list2</li>
+<li>list3</li>
+<li>list4</li>
+<li>list5</li>
+</ul>
+</section>
+
+<section>
+<h3>開啟連結</h3>
+<dl class="sample target">
+<dt><a href="#panel1">MENU1</a></dt>
+<dd id="panel1">panel1 panel1 panel1 panel1 panel1 panel1 panel1 panel1 panel1</dd>
+<dt><a href="#panel2">MENU2</a></dt>
+<dd id="panel2">panel2 panel2 panel2 panel2 panel2 panel2 panel2 panel2 panel2</dd>
+<dt><a href="#panel3">MENU3</a></dt>
+<dd id="panel3">panel3 panel3 panel3 panel3 panel3 panel3 panel3 panel3 panel3</dd>
+</dl>
+</section>
+
+<section>
+<h3>依表單元件狀態切換Label樣式</h3>
+<form class="ui">
+<input type="radio" name="radio" id="radio1" value="1">
+<label for="radio1">選項 1</label>
+<input type="radio" name="radio" id="radio2" value="2">
+<label for="radio2">選項 2</label>
+<input type="radio" name="radio" id="radio3" value="3" disabled>
+<label for="radio3">選項 3</label>
+</form>
+</section>
+</section>
+
 </body>
 </html>
