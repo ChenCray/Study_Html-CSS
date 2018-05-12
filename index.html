@@ -1,198 +1,143 @@
-<!DOCTYPE html>
-<html lang="zh-TW">
+﻿<!DOCTYPE html>
+<html lang="zh">
 <head>
 <meta charset="utf-8">
-<title>範例：CSS3屬性</title>
-<link href="css/base.css" rel="stylesheet" media="all">
-<link href="css/style.css" rel="stylesheet" media="all">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<title>Cafe Leaf</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+
+<!--icon -->
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="icon" sizes="192x192" href="apple-touch-icon.png">
+
+
+<!-- stylesheets -->
+<link rel="stylesheet" href="css/base.css" media="all">
+
 </head>
 <body>
-<h1>CSS3 Properties</h1>
+<header id="header">
+	<div class="container">
+		<h1 class="top-logo"><a href="index.html"><img src="img/logo_header.png" alt="香醇紅茶與手做烘焙點心的店 Cafe Leaf"></a></h1>
+	</div>
+</header><!-- /#header -->
 
-<section  class="category">
-<h2>Text＆Color/Unit【文字美化與新色、新單位】</h2>
-
-<section>
-<h3>text-shadow</h3>
-<table border="1" class="ie">
-<tr>
-<th>IE10+</th><td>○</td>
-<th>IE9</th><td>×</td>
-<th>IE8</th><td>×</td>
-</tr>
-</table>
-<ul class="sample ts">
-<li class="ts01">Drop Shadow</li>
-<li class="ts02">Grow</li>
-<li class="ts03">Bevel</li>
-<li class="ts04">Embos</li>
-<li class="ts05">Stroke</li>
-<li class="ts06">Neon</li>
-</ul>
-</section>
-
-<section class="color">
-<h3>rgba()</h3>
-<table border="1" class="ie">
-<tr>
-<th>IE10+</th><td>○</td>
-<th>IE9</th><td>○</td>
-<th>IE8</th><td>×</td>
-</tr>
-</table>
-<p class="rgba"><span>RGBA COLOR</span></p>
-
-<h3>hsla()</h3>
-<ul class="hsla">
-<li class="hsla01">紅</li>
-<li class="hsla02">橙</li>
-<li class="hsla03">黃</li>
-<li class="hsla04">緣</li>
-<li class="hsla05">藍</li>
-<li class="hsla06">紫</li>
-<li class="hsla07">桃</li>
-</ul>
-</section>
-
-<section>
-<h3>rem</h3>
-<table border="1" class="ie">
-<tr>
-<th>IE10+</th><td>○</td>
-<th>IE9</th><td>○</td>
-<th>IE8</th><td>×</td>
-</tr>
-</table>
-<ul class="em">
-<li>以em設定的項目</li>
-<li>以em設定的項目
-	<ul>
-		<li>以em設定的巢狀項目</li>
+<nav id="gnav">
+	<ul class="container">
+		<li><a href="#">Home</a></li>
+		<li><a href="#">Concept</a></li>
+		<li><a href="#">Menu</a></li>
+		<li><a href="#">Access</a></li>
 	</ul>
-</li>
-</ul>
-<hr>
-<ul class="rem">
-<li>以rem設定的項目</li>
-<li>以rem設定的項目
-	<ul>
-		<li>以rem設定的巢狀項目</li>
-	</ul>
-</li>
-</ul>
-</section>
-</section>
+</nav><!-- /#gnav -->
 
-<section class="category">
-<h2>Box＆Box Model【盒子模型與樣式美化】</h2>
+<main id="main" class="container">
 
-<section>
-<h3>border-radius</h3>
-<table border="1" class="ie">
-<tr>
-<th>IE10+</th><td>○</td>
-<th>IE9</th><td>○</td>
-<th>IE8</th><td>×</td>
-</tr>
-</table>
-<ul class="sample bdr">
-<li class="bdr01">全部相同</li>
-<li class="bdr02">左上｜右上｜右下｜左下</li>
-<li class="bdr03">左上｜右上與左下｜右下</li>
-<li class="bdr04">左上與右下｜ 右上與左下</li>
-<li class="bdr05">正圓</li>
-</ul>
-</section>
+	<div id="intro" class="full">
 
-<section>
-<h3>box-shadow</h3>
-<table border="1" class="ie">
-<tr>
-<th>IE10+</th><td>○</td>
-<th>IE9</th><td>○</td>
-<th>IE8</th><td>×</td>
-</tr>
-</table>
-<ul class="sample bs">
-<li class="bs01">Drop Shadow</li>
-<li class="bs02">Grow</li>
-<li class="bs03">Inset Drop Shadow</li>
-<li class="bs04">Inset Grow</li>
-<li class="bs05">Spread Shadow</li>
-<li class="bs06">Multi Shadow</li>
-</ul>
-</section>
+		<div class="intro-text">
+			<p>Cafe Leaf是位於港區青山一丁目的紅茶專門店。<br>
+			使用店主專業眼光所購入的嚴選茶葉，為您獻上每一壺好茶。<br>
+			在這隱身於都市中的小店，輕鬆地享受悠閒的午茶時光吧！</p>
+		</div><!-- /.intro-text -->
+		<div class="intro-map">
+			<div class="map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3241.177172339873!2d139.72505595!3d35.672639249999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z5p2x5Lqs6YO95riv5Yy66Z2S5bGxMS0x!5e0!3m2!1sja!2sjp!4v1439816808418" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div><!-- /.map -->
+			<address>
+				<p>東京都港區青山1-X-X 第一青山大樓1F</p>
+				<p><a href="tel:03-0000-0000" class="btn-tel">03-0000-0000</a></p>
+			</address>
+		</div><!-- /.intro-map -->
+	</div><!-- /#intro -->
 
-<section>
-<h3>box-sizing</h3>
-<table border="1" class="ie">
-<tr>
-<th>IE10+</th><td>○</td>
-<th>IE9</th><td>○</td>
-<th>IE8</th><td>○</td>
-</tr>
-</table>
-<ul class="sample bz">
-<li class="bz01">content-box（width:300px;）</li>
-<li class="bz02">border-box（width:300px;）</li>
-</ul>
-</section>
-</section>
+	<section id="menu">
+		<h2 class="heading">Pickup Menu <a href="#" class="more">more</a></h2>
+		<ul class="menu-list">
+			<li>
+				<img src="img/ph_menu01.jpg" alt="">
+				<p class="menu-text">大吉嶺紅茶<br><b>800圓</b></p>
+			</li>
+			<li>
+				<img src="img/ph_menu02.jpg" alt="">
+				<p class="menu-text">皇家奶茶<br><b>850圓</b></p>
+			</li>
+			<li>
+				<img src="img/ph_menu03.jpg" alt="">
+				<p class="menu-text">香草茶<br><b>700圓</b></p>
+			</li>
+			<li>
+				<img src="img/ph_menu04.jpg" alt="">
+				<p class="menu-text">格子鬆餅<br><b>400圓</b></p>
+			</li>
+			<li>
+				<img src="img/ph_menu05.jpg" alt="">
+				<p class="menu-text">蘋果派<br><b>550圓</b></p>
+			</li>
+			<li>
+				<img src="img/ph_menu06.jpg" alt="">
+				<p class="menu-text">瑪德蓮蛋糕<br><b>300圓</b></p>
+			</li>
+		</ul>
+	</section><!-- /#menu -->
 
-<section  class="category">
-<h2>Background＆Gradiant【背景圖與漸層效果】</h2>
+	<section id="info">
+		<h2 class="heading">Information <a href="#" class="more">more</a></h2>
+		<dl class="info-list">
+			<dt>2015-07-28</dt>
+			<dd><a href="#">臨時休息公告</a></dd>
+			<dt>2015-05-01</dt>
+			<dd><a href="#">紅茶教室（6月份課程）開始接受報名</a></dd>
+			<dt>2014-03-03</dt>
+			<dd><a href="#">因消費稅率變動的價格調整事宜</a></dd>
+		</dl>
+	</section><!-- /#info -->
 
-<section>
-<h3>multiple-background</h3>
-<table border="1" class="ie">
-<tr>
-<th>IE10+</th><td>○</td>
-<th>IE9</th><td>○</td>
-<th>IE8</th><td>×</td>
-</tr>
-</table>
-<div class="multi-bg">&nbsp;</div>
-</section>
+	<section id="staff">
+		<div class="staff-photo"><img src="img/ph_staff.jpg" alt="工作人員近照"></div>
+		<div class="staff-msg">
+			<h2 class="staff-heading">店員小語</h2>
+			<p>具有 Tea Instructor 資格的店員為您精心沖泡出一杯杯的好茶。</p>
+		</div>
+	</section><!-- /#staff -->
 
-<section>
-<h3>background-size</h3>
-<table border="1" class="ie">
-<tr>
-<th>IE10+</th><td>○</td>
-<th>IE9</th><td>○</td>
-<th>IE8</th><td>×</td>
-</tr>
-</table>
-<ul class="bgsize">
-<li class="bgsize01">auto</li>
-<li class="bgsize02">cover</li>
-<li class="bgsize03">contain</li>
-<li class="bgsize04">%</li>
-<li class="bgsize05">px</li>
-</ul>
-</section>
+	<aside id="banner">
+		<ul class="banner-list clearfix">
+			<li><a href="#"><img src="img/bnr_blog.jpg" alt="歡迎參觀部落格"></a></li>
+			<li><a href="#"><img src="img/bnr_lesson.jpg" alt="紅茶教室簡介"></a></li>
+			<li><a href="#"><img src="img/bnr_recipe.jpg" alt="烘焙點心食譜"></a></li>
+		</ul>
+	</aside><!-- /#banner -->
+</main><!-- /#main -->
 
-<section>
-<h3>linear-gradient()</h3>
-<table border="1" class="ie">
-<tr>
-<th>IE10+</th><td>○</td>
-<th>IE9</th><td>×</td>
-<th>IE8</th><td>×</td>
-</tr>
-</table>
-<ul class="grad">
-<li class="grad01">2Colors（top → bottom）</li>
-<li class="grad02">3Colors（left → right）</li>
-<li class="grad03">3Colors（left top → right bottom）</li>
-</ul>
-</section>
-
-<section>
-<h3 class="practice">用CSS3製作有光澤的按鈕</h3>
-<p class="button"><a href="#">button</a></p>
-</section>
-</section>
-
+<footer id="footer">
+	<div class="container">
+		<div class="footer-photo"><img src="img/ph_shop.jpg" alt="店面外觀"></div>
+		<section class="footer-info">
+			<h2 class="footer-info-title"><img src="img/logo_footer.png" alt="Cafe Leaf"></h2>
+			<dl class="footer-info-list">
+				<dt>【營業時間】</dt>
+				<dd>10:00～19:00（星期二公休）</dd>
+				<dt>【電話號碼】</dt>
+				<dd>03-0000-0000</dd>
+				<dt>【地　　址】</dt>
+				<dd>東京都港區青山1-X-X  青山第一大樓1F</dd>
+				<dt>【最近車站】</dt>
+				<dd>東京地鐵‧都營大江戶線青山一丁目站  1號出口步行3分鐘</dd>
+			</dl>
+		</section>
+		<ul class="sns">
+			<li><a href="#">Twitter</a></li>
+			<li><a href="#">Facebook</a></li>
+			<li><a href="#">Pinterst</a></li>
+		</ul>
+		<p class="copyright"><small>Copyrights (c) Cafe Leaf All Rights Reserved.</small></p>
+		<p class="pagetop"><a href="#header"><img src="img/btn_top.png" alt="回到最上方"></a></p>
+	</div><!-- /.container -->
+</footer><!-- /#footer -->
 </body>
 </html>
