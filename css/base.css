@@ -117,6 +117,13 @@ a:hover img{
 	top: 0;
 }
 
+@media screen and (min-width: 640px){
+	#header{
+		padding: 80px 0;
+		text-align: left;
+	}
+}
+
 /*global navigation
 --------------------*/
 #gnav{
@@ -143,6 +150,12 @@ a:hover img{
 
 #gnav a:hover{
 	background: #ecdfc2;
+}
+
+@media screen and (min-width: 640px) {
+	#gnav{
+		margin-bottom: 20px;
+	}
 }
 /*main
 --------------------*/
@@ -202,30 +215,123 @@ a:hover img{
 	font-size: 18px;
 }
 
+@media screen and (min-width: 640px) {
+	#intro{
+		padding: 20px;
+		overflow: hidden;
+	}
+	.intro-text{
+		width: 57.7777%;
+		float: left;
+		line-height: 1.8;
+	}
+	.intro-map{
+		width: 40%;
+		float: left;
+	}
+}
 
 .full{
 	margin-left: -10px;
 	margin-right: -10px;
 }
+
+@media screen and (min-width: 640px) {
+	.full{
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
 /*Pickup Menu
 --------------------*/
-
+@media screen and (min-width: 640px) {
+	#menu{
+		margin-bottom: 40px;
+	}
+	.menu-list{
+		overflow: hidden;
+	}
+	.menu-list li{
+		float: left;
+		width: 31.9148%;
+		margin-right: 2.12765%;
+	}
+	.menu-list li:nth-child(3n){
+		margin-right: 0;
+	}
+}
 
 /*info
 --------------------*/
-
+@media screen and (min-width: 640px) {
+	#info{
+		float: left;
+		width: 48.9361%;
+	}
+}
 
 /*staff
 --------------------*/
-
+@media screen and (min-width: 640px) {
+	#staff{
+		float: left;
+		width: 48.9361%;
+		padding: 20px;
+		box-sizing: border-box;
+	}
+	.staff-photo{
+		float: left;
+		width: 35.7142%;
+		margin-bottom: 0;
+	}
+	.staff-msg{
+		float: left;
+		width: 59.5238%;
+	}
+}
 
 /*banner
 --------------------*/
-
+@media screen and (min-width: 640px) {
+	#banner{
+		clear: both;
+	}
+	.banner-list{
+		width: 100%;
+		max-width: none;
+		text-align: left;
+	}
+	.banner-list li{
+		float: left;
+		width: 31.9148%;
+		margin-right: 2.1276%;
+	}
+	.banner-list li:nth-child(3n){
+		margin-right: 0;
+	}
+}
 
 /*footer
 --------------------*/
-
+@media screen and (min-width: 640px) {
+	.footer-photo{
+		float: left;
+		width: 31.9148%;
+		margin-bottom: 20px;
+	}
+	.footer-info{
+		float: left;
+		width: 65.9574%;
+		margin-bottom: 20px;
+	}
+	.sns{
+		clear: both;
+		text-align: center;
+	}
+	.copyright{
+		text-align: center;
+	}
+}
 
 /*
 =========================================
