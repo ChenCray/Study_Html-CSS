@@ -59,7 +59,6 @@ a{
 	color: #59220d;
 	transition: 0.5s;
 }
-
 a:hover{
 	color: #d53e04;
 }
@@ -80,11 +79,21 @@ a:hover img{
 	padding-right: 10px;
 	margin: 0 auto;
 }
-
 .container:after{
-	content: "";
+	content:"";
 	display: block;
-	clear: both;
+	clear:both;
+}
+
+.full{
+	margin-left: -10px;
+	margin-right: -10px;
+}
+@media screen and (min-width:640px){
+	.full{
+		margin-left: 0;
+		margin-right: 0;
+	}
 }
 
 /*
@@ -102,7 +111,6 @@ a:hover img{
 	text-align: center;
 	position: relative;
 }
-
 #header:before{
 	content: "";
 	display: block;
@@ -116,7 +124,6 @@ a:hover img{
 	left: 0;
 	top: 0;
 }
-
 @media screen and (min-width: 640px){
 	#header{
 		padding: 80px 0;
@@ -129,37 +136,37 @@ a:hover img{
 #gnav{
 	background: #d8c7a0;
 }
-
 #gnav ul{
 	overflow: hidden;
 }
-
 #gnav li{
 	float: left;
 	width: 25%;
 	text-align: center;
 }
-
 #gnav a{
 	display: block;
 	padding: 15px 0;
 	color: #fff;
 	text-decoration: none;
-	font-size: 18px
+	font-size: 18px;
+	font-family: 'Cardo', serif;
+	font-style: italic;
 }
-
 #gnav a:hover{
 	background: #ecdfc2;
 }
-
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 640px){
 	#gnav{
 		margin-bottom: 20px;
 	}
 }
+
 /*main
 --------------------*/
-
+#main{
+	margin-bottom: 100px;
+}
 
 /*Google Map
 --------------------*/
@@ -168,14 +175,15 @@ a:hover img{
 	position: relative;
 	padding-bottom: 50%;
 }
-
 .map iframe{
 	position: absolute;
-	left: 0;
-	top: 0;
+	left:0;
+	top:0;
 	width: 100%;
 	height: 100%;
 }
+
+
 /*introduction
 --------------------*/
 #intro{
@@ -183,22 +191,18 @@ a:hover img{
 	padding: 20px 10px;
 	background: url(../img/bg_check.png);
 }
-
 .intro-text{
 	margin-bottom: 20px;
 	font-size: 114%;
 }
-
 .intro-map .map{
 	margin-bottom: 20px;
 }
-
 .intro-map address{
 	text-align: center;
 	font-style: normal;
 	font-size: 12px;
 }
-
 .intro-map address p+p{
 	margin-top: 10px;
 }
@@ -214,8 +218,7 @@ a:hover img{
 	text-decoration: none;
 	font-size: 18px;
 }
-
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 640px){
 	#intro{
 		padding: 20px;
 		overflow: hidden;
@@ -227,26 +230,41 @@ a:hover img{
 	}
 	.intro-map{
 		width: 40%;
-		float: left;
+		float: right;
+	}
+	.intro-map .map{
+		margin-bottom: 10px;
+	}
+	.intro-map address{
+		text-align: left;
+	}
+	.intro-map address p+p{
+		margin-top: 0;
+	}
+
+	.btn-tel{
+		display: inline;
+		width: auto;
+		max-width: none;
+		padding: 0;
+		background: none;
+		color: inherit;
+		font-size: inherit;
+	}
+	.btn-tel:before{
+		content:"TEL：";
 	}
 }
 
-.full{
-	margin-left: -10px;
-	margin-right: -10px;
-}
-
-@media screen and (min-width: 640px) {
-	.full{
-		margin-left: 0;
-		margin-right: 0;
-	}
-}
 /*Pickup Menu
 --------------------*/
-@media screen and (min-width: 640px) {
+.menu-text{
+	padding: 15px;
+	text-align: center;
+}
+@media screen and (min-width: 640px){
 	#menu{
-		margin-bottom: 40px;
+		margin-bottom:40px;
 	}
 	.menu-list{
 		overflow: hidden;
@@ -263,7 +281,26 @@ a:hover img{
 
 /*info
 --------------------*/
-@media screen and (min-width: 640px) {
+#info{
+	margin-bottom: 20px;
+}
+
+.info-list dt{
+	clear: left;
+	float: left;
+	width: 7em;
+	padding: 10px 0;
+	border-top: #d8c7a0 1px dotted;
+}
+.info-list dd{
+	padding: 10px 0;
+	border-top: #d8c7a0 1px dotted;
+	overflow: hidden;
+}
+.info-list :first-of-type{
+	border-top: none;
+}
+@media screen and (min-width: 640px){
 	#info{
 		float: left;
 		width: 48.9361%;
@@ -272,9 +309,32 @@ a:hover img{
 
 /*staff
 --------------------*/
-@media screen and (min-width: 640px) {
+#staff{
+	margin-bottom: 40px;
+	padding: 20px 10px;
+	background: url(../img/bg_check.png);
+	text-align: center;
+}
+.staff-photo{
+	width: 50%;
+	margin: 0 auto 20px;
+}
+.staff-photo img{
+	border: #d8c7a0 5px solid;
+}
+.staff-heading{
+	display: inline-block;
+	width: 60%;
+	padding: 8px 10px;
+	margin-bottom: 10px;
+	border-radius: 2em;
+	background: #d8c7a0;
+	color: #fff;
+	font-size: 14px;
+}
+@media screen and (min-width: 640px){
 	#staff{
-		float: left;
+		float: right;
 		width: 48.9361%;
 		padding: 20px;
 		box-sizing: border-box;
@@ -285,14 +345,27 @@ a:hover img{
 		margin-bottom: 0;
 	}
 	.staff-msg{
-		float: left;
+		float: right;
 		width: 59.5238%;
 	}
 }
 
 /*banner
 --------------------*/
-@media screen and (min-width: 640px) {
+.banner-list{
+	width: 83.3333%;
+	max-width: 300px;
+	margin: 0 auto;
+}
+.banner-list li{
+	margin-bottom: 20px;
+	box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+.banner-list li img{
+	border: #fff 5px solid;
+	box-sizing: border-box;
+}
+@media screen and (min-width: 640px){
 	#banner{
 		clear: both;
 	}
@@ -313,14 +386,73 @@ a:hover img{
 
 /*footer
 --------------------*/
-@media screen and (min-width: 640px) {
+#footer{
+	padding: 20px 10px;
+	background: #d8c7a0;
+}
+
+.footer-photo{
+	width: 83.3333%;
+	margin: 0 auto 20px;
+}
+.footer-photo img{
+	border: #fff 5px solid;
+}
+
+.footer-info-title{
+	width: 33.3333%;
+	min-width: 100px;
+	margin-bottom: 15px;
+}
+
+.footer-info-list{
+	margin-bottom: 20px;
+}
+.footer-info-list dt{
+	clear: left;
+	float: left;
+	width: 7em;
+	margin-bottom: 10px;
+}
+.footer-info-list dd{
+	margin-bottom: 10px;
+	overflow: hidden;
+}
+
+.sns{
+	margin-bottom: 15px;
+}
+.sns li{
+	display: inline-block;
+}
+.sns a{
+	display: block;
+	padding: 10px 20px;
+	background: #fff;
+	color: #d8c7a0;
+	border-radius: 5px;
+	font-size: 24px;
+	text-decoration: none;
+}
+.sns a:hover{
+	opacity: 0.7;
+}
+
+.pagetop{
+	width: 14.0625%;
+	min-width: 45px;
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+}
+@media screen and (min-width: 640px){
 	.footer-photo{
 		float: left;
 		width: 31.9148%;
 		margin-bottom: 20px;
 	}
 	.footer-info{
-		float: left;
+		float: right;
 		width: 65.9574%;
 		margin-bottom: 20px;
 	}
@@ -341,7 +473,61 @@ a:hover img{
 
 /*Heading
 --------------------*/
-
+.heading{
+	margin-bottom: 15px;
+	border-bottom: #4d941a 1px solid;
+	color: #4d941a;
+	font-size: 20px;
+	font-weight: normal;
+	font-family: 'Cardo', serif;
+	font-style: italic;
+	overflow: hidden;
+	position: relative;
+}
+.heading::before{
+	content: "";
+	display: inline-block;
+	width: 35px;
+	height: 26px;
+	margin-right: 5px;
+	background: url(../img/ico_pot.png) no-repeat;
+	background-image: -webkit-image-set(url(../img/ico_pot.png) 1x, url(../img/ico_pot@2x.png) 2x);
+	background-image: image-set(url(../img/ico_pot.png) 1x, url(../img/ico_pot@2x.png) 2x);
+	position: relative;
+	bottom: -3px;
+}
+/*
+@media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+	.heading::before{
+		background: url(../img/ico_pot@2x.png) no-repeat;
+		background-size: contain;
+	}
+}
+*/
+.heading .more{
+	float: right;
+	display: inline-block;
+	padding: 5px 5px 5px 10px;
+	background: #4d941a;
+	border-radius: 2em;
+	color: #fff;
+	text-decoration: none;
+	font-size: 14px;
+	line-height: 1;
+}
+.heading .more::after{
+	content: "";
+	display: inline-block;
+	width: 0;
+	height: 0;
+	margin-top: 2px;
+	margin-left: 5px;
+	border: transparent 5px solid;
+	border-left-color: #fff;
+}
+.heading .more:hover{
+	opacity: 0.7;
+}
 
 /*
 =========================================
@@ -386,4 +572,41 @@ a:hover img{
 }
 .clearfix{
 	zoom:1;
+}
+/* 外部圖示
+--------------------*/
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?uu5xe');
+  src:  url('fonts/icomoon.eot?uu5xe#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?uu5xe') format('truetype'),
+    url('fonts/icomoon.woff?uu5xe') format('woff'),
+    url('fonts/icomoon.svg?uu5xe#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook:before {
+  content: "\ea90";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+.icon-pinterest:before {
+  content: "\ead1";
 }
